@@ -29,7 +29,24 @@
 		 
 	</head>
 	<body class="slides scroll animated">
-		
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '164742327550024',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.0'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/da_DK/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <!-- SVG Library -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -356,6 +373,10 @@
     </div>
   </div>
 </section>
+
+<div class="fb-customerchat"
+ page_id="<PAGE_ID>">
+</div>
 
 <!-- Preloader -->
 <div class="loadingIcon"><svg class="loading-icon" id="loading-circle" viewBox="0 0 18 18"><circle class="circle" opacity=".1" stroke="#fff" stroke-width="2" stroke-miterlimit="10" cx="9" cy="9" r="8" fill="none"></circle><circle class="dash" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="1,100" cx="9" cy="9" r="8" fill="none"></circle></svg></div>
